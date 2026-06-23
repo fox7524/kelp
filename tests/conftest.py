@@ -6,5 +6,7 @@ import tempfile
 def temp_profile():
     fd, path = tempfile.mkstemp(suffix=".yaml")
     os.close(fd)
-    yield path
     os.unlink(path)
+    yield path
+    if os.path.exists(path):
+        os.unlink(path)
