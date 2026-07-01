@@ -310,7 +310,7 @@ git commit -m "feat: add legal email templates"
 - Create: `src/legal.py`
 - Create: `tests/test_legal.py`
 
-- [ ] **Step 1: Write the failing test**
+- [x] **Step 1: Write the failing test**
 
 ```python
 from src.legal import LegalEngine
@@ -329,12 +329,12 @@ def test_generate_email():
     assert "http://bad.com/john" in email_content
 ```
 
-- [ ] **Step 2: Run test to verify it fails**
+- [x] **Step 2: Run test to verify it fails**
 
 Run: `pytest tests/test_legal.py -v`
 Expected: FAIL
 
-- [ ] **Step 3: Write minimal implementation**
+- [x] **Step 3: Write minimal implementation**
 
 ```python
 import os
@@ -359,12 +359,12 @@ class LegalEngine:
         return True
 ```
 
-- [ ] **Step 4: Run test to verify it passes**
+- [x] **Step 4: Run test to verify it passes**
 
 Run: `pytest tests/test_legal.py -v`
 Expected: PASS
 
-- [ ] **Step 5: Commit**
+- [x] **Step 5: Commit**
 
 ```bash
 git add src/legal.py tests/test_legal.py
@@ -379,7 +379,7 @@ git commit -m "feat: implement legal engine email generator"
 - Create: `kelp.py`
 - Create: `tests/test_kelp.py`
 
-- [ ] **Step 1: Write the failing test**
+- [x] **Step 1: Write the failing test**
 
 ```python
 from typer.testing import CliRunner
@@ -396,12 +396,12 @@ def test_kelp_init():
         os.remove("test_kelp_profile.yaml")
 ```
 
-- [ ] **Step 2: Run test to verify it fails**
+- [x] **Step 2: Run test to verify it fails**
 
 Run: `pytest tests/test_kelp.py -v`
 Expected: FAIL
 
-- [ ] **Step 3: Write minimal implementation**
+- [x] **Step 3: Write minimal implementation**
 
 ```python
 import typer
@@ -457,12 +457,12 @@ if __name__ == "__main__":
     app()
 ```
 
-- [ ] **Step 4: Run test to verify it passes**
+- [x] **Step 4: Run test to verify it passes**
 
 Run: `pytest tests/test_kelp.py -v`
 Expected: PASS
 
-- [ ] **Step 5: Commit**
+- [x] **Step 5: Commit**
 
 ```bash
 git add kelp.py tests/test_kelp.py
